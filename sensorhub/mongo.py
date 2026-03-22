@@ -28,3 +28,4 @@ class MongoDB:
     def read_sensor_data_by_time(self, start_iso: str, end_iso: str):
         query = {"timestamp": {"$gte": start_iso, "$lte": end_iso}}
         return self.client_collection.find(query)
+

@@ -1,4 +1,4 @@
-# SensorHub mkñasjdlñas
+# SensorHub
 
 REST API for IoT environmental monitoring. Sensors send temperature, humidity and CO2 readings which are stored in MongoDB and aggregated into hourly CSV reports uploaded to MinIO.
 
@@ -15,7 +15,7 @@ cp .env.example .env   # fill in credentials
 docker compose up -d
 ```
 
-API available at `http://localhost:8000` · MinIO console at `http://localhost:9001`
+API available at `http://localhost:8001` · MinIO console at `http://localhost:9001`
 
 ## Endpoints
 
@@ -46,4 +46,3 @@ just check        # lint + format + types + tests
 just bump-patch   # 0.1.0 → 0.1.1
 git push          # release created automatically on merge to main
 ```
-A
